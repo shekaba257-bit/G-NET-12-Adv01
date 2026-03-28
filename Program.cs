@@ -1,10 +1,185 @@
-﻿namespace Assignment_Session01_AdvancedC_
+﻿using Microsoft.VisualBasic;
+using System.Data;
+using System.Net.NetworkInformation;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+
+namespace Assignment_Session01_AdvancedC_
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            #region Question01
+            //Q1: What is a generic class? Why use generics?
+            //Generic class:
+            //A class that uses a type parameter(like<T>) instead of a fixed data type, so it can work with any type
+            //Why use generics ?
+            //Reusability : write once, use with different types
+            //Type safety: fewer errors
+            //Performance: no boxing / unboxing
+            #endregion
+
+            #region Question02
+            //Q2: Write a generic class Container<T> with Add and Get methods.
+            //Container<string> stringcontainer= new Container<string>();
+            //stringcontainer.Add("Iphone16");
+
+            #endregion
+            #region Question03
+            ////Using more than one generic type(like<TKey, TValue>) in a class
+
+            //Pair<int, string> pair1 = new Pair<int, string>(1, "Hello");
+            //Console.WriteLine(pair1.Key);
+            //Console.WriteLine(pair1.Value);
+
+            //Pair<string, double> pair2 = new Pair<string, double>("Price", 99.9);
+            //Console.WriteLine(pair2.Key);
+            #endregion
+
+            #region Question04
+            ////Q4: What is a generic method? Write Swap<T> method.
+
+            ////A method that uses a type parameter (like <T>) so it can work with any data type.
+
+            //int a = 10, b = 20;
+            //Utility.Swap<int>(ref a, ref b);
+
+            //Console.WriteLine(b);//10
+            //Console.WriteLine(a);//20
+            #endregion
+
+
+            #region Question05
+            //Q5: Write a generic method FindMax<T> that finds maximum value
+            //int[] Numbers = { 10, 5, 7, 8, 12, 15, 4, };
+            //Utility.PrintArray<int>(Numbers);
+            //Console.WriteLine($"Max Number ={Utility.FindMax(Numbers)}");
+
+            #endregion
+            #region Question06
+            //Q6: What is a generic interface? Write IRepository<T>. 
+
+            //IReposatory<Product> productRepo = new ProductRepository();
+            //productRepo.Add(new Product(1, "Iphone16", 5000.00m));
+            //productRepo.Add(new Product(2, "Iphone17", 6000.00m));
+
+
+
+            #endregion
+            #region Question07
+            ////Q7: What is the 'struct' constraint? Write an example.
+            ////generic constraint that ensures the type parameter must be a value type
+            ////(like int, double, DateTime, or a custom struct)
+
+            //ValueHolder<int> intHolder = new (100);
+            //Console.WriteLine(intHolder.Value);
+
+            //ValueHolder<double> doubleHolder = new (3.14);
+            //Console.WriteLine(doubleHolder.Value);
+            #endregion
+            #region Question08
+            //Q8: What is the 'class' constraint? Write an example.
+            //generic constraint that ensures the type parameter must be a reference type
+            ////Repository<string> stringRepo = new Repository<string>();
+            ////stringRepo.Add("Hello");
+            ////stringRepo.Add("World");
+            ////Console.WriteLine(stringRepo.GetFirst()); 
+            #endregion
+            #region Question09
+            //Q9: What is the 'new()' constraint? Write an example 
+            //  must have a public parameterless constructor 
+
+
+            ////Factory<Product> productFactory = new Factory<Product>();
+            ////Product p = productFactory.CreateInstance();
+            ////Console.WriteLine(p.Name);
+            #endregion
+            #region Question10
+            ////Q10:  What is the interface constraint? Write an example
+            ////must implement a specific interface
+
+            //Document doc = new Document();
+            //Printer<Document> printer = new Printer<Document>();
+            //printer.PrintItem(doc); //  Printing: My Document
+
+            #endregion
+            #region Question11
+            //Q11: What is the base class constraint? Write an example
+            //must inherit from a specific base class
+            //Answer
+            //Employee emp = new Employee { Name = "Alice", Id = 101 };
+            //Manager<Employee> manager = new Manager<Employee>();
+            //manager.Welcome(emp); //  Hello, Alice!
+            #endregion
+            #region Question12
+            //// Q12: How do you apply multiple constraints? Write an example
+
+            //Manager<Employee> manager = new Manager<Employee>();
+            //manager.CreateAndPrint();
+
+            #endregion
+            #region Question13
+            //Q13: What does the 'default' keyword do in generics?
+            //returns the default value for the type parameter T:
+
+            //For value types(like int, double, struct) =>> 0.0, false, or default struct valuess
+            //For reference types(like classes, string, arrays)   returns null 
+            #endregion
+            #region Question14
+            //Q14: Write a SafeList<T> that returns default when the index is invalid
+
+            ////SafeList<int> numbers = new SafeList<int>();
+            ////numbers.Add(10);
+            ////numbers.Add(20);
+
+            ////Console.WriteLine(numbers.Get(0)); // 10
+            ////Console.WriteLine(numbers.Get(1)); // 20
+            ////Console.WriteLine(numbers.Get(5)); // 0 
+
+            ////SafeList<string> words = new SafeList<string>();
+            ////words.Add("Hello");
+            ////Console.WriteLine(words.Get(2) == null); // True 
+
+            #endregion
+            #region Question15
+            //Q15: What is covariance? Explain the 'out' keyword.
+
+
+            //Answer : Covariance allows you to use a more derived type than originally specified.
+            //The 'out' keyword is used to indicate that a type parameter is covariant,
+            //meaning it can be substituted with a more derived type
+            #endregion
+            #region Question16
+            //Q16: What is contravariance? Explain the 'in' keyword
+
+            //Answer : Contravariance allows you to use a less derived type than originally specified.
+            //The 'in' keyword is used to indicate that a type parameter is contravariant,
+            //meaning it can be substituted with a less derived type
+            #endregion
+
+            #region Question 19
+            //Q19: How can you inherit from a generic class?
+            //You can inherit from a generic class by specifying the type parameter in the derived class
+            #endregion
+            #region Question20
+            //Q20: Complete Exercise - Create a generic Cache<TKey, TValue>with Add, Get, Remove, Contains, and expiration support. 
+
+
+            //Cache<string, string> cache = new Cache<string, string>();
+
+            //cache.Add("user1", "Alice", 5);
+            //cache.Add("user2", "Bob");     
+
+            //Console.WriteLine(cache.Get("user1")); 
+            //Console.WriteLine(cache.Contains("user2")); 
+
+            //System.Threading.Thread.Sleep(6000); 
+            //Console.WriteLine(cache.Get("user1"));
+            //Console.WriteLine(cache.Contains("user1")); 
+
+            //cache.Remove("user2");
+            //Console.WriteLine(cache.Contains("user2")); 
+            #endregion
         }
     }
 }
