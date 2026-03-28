@@ -45,6 +45,15 @@ namespace Assignment_Session01_AdvancedC_
             //Console.WriteLine(b);//10
             //Console.WriteLine(a);//20
             #endregion
+
+
+            #region Question05
+            //Q5: Write a generic method FindMax<T> that finds maximum value
+            //int[] Numbers = { 10, 5, 7, 8, 12, 15, 4, };
+            //Utility.PrintArray<int>(Numbers);
+            //Console.WriteLine($"Max Number ={Utility.FindMax(Numbers)}");
+
+            #endregion
         }
     }
 }
