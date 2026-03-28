@@ -1,4 +1,5 @@
-﻿using System.Data;
+﻿using Microsoft.VisualBasic;
+using System.Data;
 using System.Net.NetworkInformation;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
@@ -109,6 +110,13 @@ namespace Assignment_Session01_AdvancedC_
             //Employee emp = new Employee { Name = "Alice", Id = 101 };
             //Manager<Employee> manager = new Manager<Employee>();
             //manager.Welcome(emp); //  Hello, Alice!
+            #endregion
+            #region Question12
+            //// Q12: How do you apply multiple constraints? Write an example
+
+            //Manager<Employee> manager = new Manager<Employee>();
+            //manager.CreateAndPrint();
+
             #endregion
         }
     }
