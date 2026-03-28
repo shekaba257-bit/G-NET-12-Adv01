@@ -125,6 +125,22 @@ namespace Assignment_Session01_AdvancedC_
             //For value types(like int, double, struct) =>> 0.0, false, or default struct valuess
             //For reference types(like classes, string, arrays)   returns null 
             #endregion
+            #region Question14
+            //Q14: Write a SafeList<T> that returns default when the index is invalid
+
+            ////SafeList<int> numbers = new SafeList<int>();
+            ////numbers.Add(10);
+            ////numbers.Add(20);
+
+            ////Console.WriteLine(numbers.Get(0)); // 10
+            ////Console.WriteLine(numbers.Get(1)); // 20
+            ////Console.WriteLine(numbers.Get(5)); // 0 
+
+            ////SafeList<string> words = new SafeList<string>();
+            ////words.Add("Hello");
+            ////Console.WriteLine(words.Get(2) == null); // True 
+
+            #endregion
         }
     }
 }
