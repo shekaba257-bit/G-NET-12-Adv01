@@ -16,6 +16,12 @@ namespace Assignment_Session01_AdvancedC_
             //Performance: no boxing / unboxing
             #endregion
 
+            #region Question02
+            //Q2: Write a generic class Container<T> with Add and Get methods.
+            //Container<string> stringcontainer= new Container<string>();
+            //stringcontainer.Add("Iphone16");
+
+            #endregion
 
         }
     }
