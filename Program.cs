@@ -54,6 +54,16 @@ namespace Assignment_Session01_AdvancedC_
             //Console.WriteLine($"Max Number ={Utility.FindMax(Numbers)}");
 
             #endregion
+            #region Question06
+            //Q6: What is a generic interface? Write IRepository<T>. 
+
+            //IReposatory<Product> productRepo = new ProductRepository();
+            //productRepo.Add(new Product(1, "Iphone16", 5000.00m));
+            //productRepo.Add(new Product(2, "Iphone17", 6000.00m));
+
+
+
+            #endregion
         }
     }
 }
