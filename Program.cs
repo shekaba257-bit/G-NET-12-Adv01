@@ -156,6 +156,11 @@ namespace Assignment_Session01_AdvancedC_
             //The 'in' keyword is used to indicate that a type parameter is contravariant,
             //meaning it can be substituted with a less derived type
             #endregion
+
+            #region Question 19
+            //Q19: How can you inherit from a generic class?
+            //You can inherit from a generic class by specifying the type parameter in the derived class
+            #endregion
         }
     }
 }
