@@ -34,6 +34,17 @@ namespace Assignment_Session01_AdvancedC_
             //Console.WriteLine(pair2.Key);
             #endregion
 
+            #region Question04
+            ////Q4: What is a generic method? Write Swap<T> method.
+
+            ////A method that uses a type parameter (like <T>) so it can work with any data type.
+
+            //int a = 10, b = 20;
+            //Utility.Swap<int>(ref a, ref b);
+
+            //Console.WriteLine(b);//10
+            //Console.WriteLine(a);//20
+            #endregion
         }
     }
 }
