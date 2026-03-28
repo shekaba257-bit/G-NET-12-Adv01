@@ -161,6 +161,25 @@ namespace Assignment_Session01_AdvancedC_
             //Q19: How can you inherit from a generic class?
             //You can inherit from a generic class by specifying the type parameter in the derived class
             #endregion
+            #region Question20
+            //Q20: Complete Exercise - Create a generic Cache<TKey, TValue>with Add, Get, Remove, Contains, and expiration support. 
+
+
+            //Cache<string, string> cache = new Cache<string, string>();
+
+            //cache.Add("user1", "Alice", 5);
+            //cache.Add("user2", "Bob");     
+
+            //Console.WriteLine(cache.Get("user1")); 
+            //Console.WriteLine(cache.Contains("user2")); 
+
+            //System.Threading.Thread.Sleep(6000); 
+            //Console.WriteLine(cache.Get("user1"));
+            //Console.WriteLine(cache.Contains("user1")); 
+
+            //cache.Remove("user2");
+            //Console.WriteLine(cache.Contains("user2")); 
+            #endregion
         }
     }
 }
