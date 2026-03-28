@@ -84,6 +84,15 @@ namespace Assignment_Session01_AdvancedC_
             ////stringRepo.Add("World");
             ////Console.WriteLine(stringRepo.GetFirst()); 
             #endregion
+            #region Question09
+            //Q9: What is the 'new()' constraint? Write an example 
+            //  must have a public parameterless constructor 
+
+
+            ////Factory<Product> productFactory = new Factory<Product>();
+            ////Product p = productFactory.CreateInstance();
+            ////Console.WriteLine(p.Name);
+            #endregion
         }
     }
 }
