@@ -1,4 +1,5 @@
-﻿using System.Net.NetworkInformation;
+﻿using System.Data;
+using System.Net.NetworkInformation;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Assignment_Session01_AdvancedC_
@@ -63,6 +64,17 @@ namespace Assignment_Session01_AdvancedC_
 
 
 
+            #endregion
+            #region Question07
+            ////Q7: What is the 'struct' constraint? Write an example.
+            ////generic constraint that ensures the type parameter must be a value type
+            ////(like int, double, DateTime, or a custom struct)
+
+            //ValueHolder<int> intHolder = new (100);
+            //Console.WriteLine(intHolder.Value);
+
+            //ValueHolder<double> doubleHolder = new (3.14);
+            //Console.WriteLine(doubleHolder.Value);
             #endregion
         }
     }
