@@ -118,6 +118,13 @@ namespace Assignment_Session01_AdvancedC_
             //manager.CreateAndPrint();
 
             #endregion
+            #region Question13
+            //Q13: What does the 'default' keyword do in generics?
+            //returns the default value for the type parameter T:
+
+            //For value types(like int, double, struct) =>> 0.0, false, or default struct values
+            //For reference types(like classes, string, arrays)   returns null
+            #endregion
         }
     }
 }
