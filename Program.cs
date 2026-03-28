@@ -99,8 +99,16 @@ namespace Assignment_Session01_AdvancedC_
 
             //Document doc = new Document();
             //Printer<Document> printer = new Printer<Document>();
-            //printer.PrintItem(doc); // Output: Printing: My Document
+            //printer.PrintItem(doc); //  Printing: My Document
 
+            #endregion
+            #region Question11
+            //Q11: What is the base class constraint? Write an example
+            //must inherit from a specific base class
+            //Answer
+            //Employee emp = new Employee { Name = "Alice", Id = 101 };
+            //Manager<Employee> manager = new Manager<Employee>();
+            //manager.Welcome(emp); //  Hello, Alice!
             #endregion
         }
     }
