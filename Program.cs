@@ -93,6 +93,15 @@ namespace Assignment_Session01_AdvancedC_
             ////Product p = productFactory.CreateInstance();
             ////Console.WriteLine(p.Name);
             #endregion
+            #region Question10
+            ////Q10:  What is the interface constraint? Write an example
+            ////must implement a specific interface
+
+            //Document doc = new Document();
+            //Printer<Document> printer = new Printer<Document>();
+            //printer.PrintItem(doc); // Output: Printing: My Document
+
+            #endregion
         }
     }
 }
