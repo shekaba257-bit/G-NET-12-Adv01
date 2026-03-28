@@ -1,4 +1,5 @@
-﻿using static System.Runtime.InteropServices.JavaScript.JSType;
+﻿using System.Net.NetworkInformation;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Assignment_Session01_AdvancedC_
 {
@@ -21,6 +22,16 @@ namespace Assignment_Session01_AdvancedC_
             //Container<string> stringcontainer= new Container<string>();
             //stringcontainer.Add("Iphone16");
 
+            #endregion
+            #region Question03
+            ////Using more than one generic type(like<TKey, TValue>) in a class
+
+            //Pair<int, string> pair1 = new Pair<int, string>(1, "Hello");
+            //Console.WriteLine(pair1.Key);
+            //Console.WriteLine(pair1.Value);
+
+            //Pair<string, double> pair2 = new Pair<string, double>("Price", 99.9);
+            //Console.WriteLine(pair2.Key);
             #endregion
 
         }
