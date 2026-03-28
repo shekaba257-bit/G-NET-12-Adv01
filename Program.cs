@@ -76,6 +76,14 @@ namespace Assignment_Session01_AdvancedC_
             //ValueHolder<double> doubleHolder = new (3.14);
             //Console.WriteLine(doubleHolder.Value);
             #endregion
+            #region Question08
+            //Q8: What is the 'class' constraint? Write an example.
+            //generic constraint that ensures the type parameter must be a reference type
+            ////Repository<string> stringRepo = new Repository<string>();
+            ////stringRepo.Add("Hello");
+            ////stringRepo.Add("World");
+            ////Console.WriteLine(stringRepo.GetFirst()); 
+            #endregion
         }
     }
 }
